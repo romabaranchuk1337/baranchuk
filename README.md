@@ -32,10 +32,10 @@ The build output is created in `dist/`.
 
 The repository includes `.github/workflows/pages.yml`. Every push to `main` builds the site and deploys `dist/` to GitHub Pages.
 
-For the repository `baranchuk-productions`, the workflow uses:
+For the repository `baranchuk`, the workflow uses:
 
 ```bash
-BASE_PATH=/baranchuk-productions/
+BASE_PATH=/baranchuk/
 ```
 
 If the repository name changes, update the `BASE_PATH` value in the workflow.
