@@ -14,6 +14,7 @@ function App() {
         <Navigation />
         <div className="flex-grow">
           <Route path="/" component={Home} />
+          <Route path="/portfolio" component={Home} />
           <Route path="/project/:id" component={ProjectDetail} />
           <Route path="/about" component={About} />
         </div>

@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'wouter';
 
 const navItems = [
-  { href: '/', label: 'ПРОЄКТИ' },
-  { href: '/about', label: 'ПРО МЕНЕ' },
+  { href: '/', label: 'ПРОЄКТИ', match: '/' },
+  { href: '/portfolio', label: 'ПОРТФОЛІО', match: '/portfolio' },
+  { href: '/about', label: 'ПРО МЕНЕ', match: '/about' },
 ];
 
 export function Navigation() {
@@ -20,7 +21,7 @@ export function Navigation() {
             <Link
               key={item.href}
               href={item.href}
-              className={location === item.href ? 'site-nav__link active' : 'site-nav__link'}
+              className={location === item.match ? 'site-nav__link active' : 'site-nav__link'}
             >
               {item.label}
             </Link>

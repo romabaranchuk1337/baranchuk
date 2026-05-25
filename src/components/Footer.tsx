@@ -10,7 +10,7 @@ export function Footer() {
           Baranchuk Production
         </a>
         <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
-          Roma Baranchuk
+          Роман Баранчук
         </a>
         <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
           YouTube

@@ -9,7 +9,7 @@ export function Home() {
         <h1 id="projects-title">* ПРОЄКТИ.</h1>
       </section>
 
-      <section className="portfolio-grid" aria-label="Вибрані проєкти">
+      <section id="portfolio" className="portfolio-grid" aria-label="Вибрані проєкти">
         {projects.map((project) => (
           <Link key={project.id} href={`/project/${project.id}`} className="portfolio-item">
             <span className="portfolio-item__media">
@@ -43,7 +43,7 @@ export function Home() {
           @roma.baranchuk
         </a>
         <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
-          YouTube / Roman Baranchuk
+          YouTube / Роман Баранчук
         </a>
       </section>
     </main>

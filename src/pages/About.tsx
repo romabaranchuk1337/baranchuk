@@ -39,7 +39,7 @@ export function About() {
                 Instagram / Roma Baranchuk
               </a>
               <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
-                YouTube / Roman Baranchuk
+                YouTube / Роман Баранчук
               </a>
             </div>
           </div>
