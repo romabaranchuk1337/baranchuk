@@ -23,7 +23,7 @@ export const focusAreas = [
     text: 'Рух, дорога, звук мотора, зимове світло й деталі автомобіля без зайвої реклами.',
   },
   {
-    title: 'Reels / social cuts',
+    title: 'Reels / короткі відео',
     text: 'Короткі вертикальні відео, backstage і швидкі монтажі для Instagram та інших соцмереж.',
   },
   {
@@ -147,7 +147,7 @@ export const projects: Project[] = [
   },
   {
     id: 'product-detail-film',
-    title: 'Product detail film',
+    title: 'Предметне відео',
     description:
       'Муляж продуктового відео: макро, контрольоване світло й преміальний мінімалістичний настрій.',
     thumbnail:
@@ -165,7 +165,7 @@ export const projects: Project[] = [
   },
   {
     id: 'travel-recap',
-    title: 'Travel recap',
+    title: 'Відео з подорожі',
     description:
       'Муляж travel-відео: дорога, широкі кадри, маленькі моменти й природне світло.',
     thumbnail:
@@ -183,7 +183,7 @@ export const projects: Project[] = [
   },
   {
     id: 'event-aftermovie',
-    title: 'Event aftermovie',
+    title: 'Відео з події',
     description:
       'Муляж aftermovie для події: люди, рух, деталі й швидка доставка для соцмереж.',
     thumbnail:
@@ -192,7 +192,7 @@ export const projects: Project[] = [
     videoType: 'youtube',
     year: '2024',
     client: 'Подія / муляж',
-    role: 'Камера / монтаж / social cutdowns',
+    role: 'Камера / монтаж / короткі версії для соцмереж',
     images: [
       'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=88',
