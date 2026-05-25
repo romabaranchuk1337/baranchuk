@@ -1,33 +1,32 @@
 import { Link, useLocation } from 'wouter';
 
 const navItems = [
-  { href: '/', label: 'Проєкти' },
-  { href: '/about', label: 'Про мене' },
+  { href: '/', label: 'PROJECTS' },
+  { href: '/about', label: 'ABOUT' },
 ];
 
 export function Navigation() {
   const [location] = useLocation();
 
   return (
-    <nav className="site-nav">
-      <div className="nav-inner">
-        <Link href="/" className="brand-link" aria-label="Baranchuk Productions home">
-          <span className="brand-mark">BP</span>
-          <span>Baranchuk Productions</span>
+    <header className="site-header">
+      <div className="site-header__inner">
+        <Link href="/" className="site-title" aria-label="Roman Baranchuk home">
+          Roman Baranchuk
         </Link>
 
-        <div className="nav-links" aria-label="Головна навігація">
+        <nav className="site-nav" aria-label="Primary navigation">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={location === item.href ? 'nav-link active' : 'nav-link'}
+              className={location === item.href ? 'site-nav__link active' : 'site-nav__link'}
             >
               {item.label}
             </Link>
           ))}
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }

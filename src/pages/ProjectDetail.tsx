@@ -7,12 +7,12 @@ export function ProjectDetail() {
 
   if (!project) {
     return (
-      <main className="not-found-page">
-        <div className="not-found-card">
-          <p className="section-kicker">(404)</p>
-          <h1>Проєкт не знайдено</h1>
-          <Link href="/" className="button-primary">
-            Повернутись до проєктів
+      <main className="simple-page">
+        <div className="simple-page__inner">
+          <p className="section-number">(404)</p>
+          <h1>Project not found</h1>
+          <Link href="/" className="text-link">
+            Back to projects
           </Link>
         </div>
       </main>
@@ -20,59 +20,48 @@ export function ProjectDetail() {
   }
 
   return (
-    <main className="project-detail-page">
-      <div className="detail-shell">
+    <main className="project-page">
+      <article className="project-page__inner">
         <Link href="/" className="back-link">
-          ← Назад до проєктів
+          ← Back to Projects
         </Link>
 
-        <header className="detail-header">
-          <div>
-            <p className="section-kicker">{project.eyebrow} / {project.year}</p>
-            <h1>{project.title}</h1>
+        <header className="project-header">
+          <p className="section-number">({project.year})</p>
+          <h1>{project.title}</h1>
+          <div className="project-meta">
+            <p>{project.description}</p>
+            <dl>
+              <div>
+                <dt>Client</dt>
+                <dd>{project.client}</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>{project.role}</dd>
+              </div>
+            </dl>
           </div>
-          <p>{project.description}</p>
         </header>
 
-        <section className="project-stats" aria-label="Деталі проєкту">
-          <div>
-            <span>Роль</span>
-            <strong>{project.role}</strong>
-          </div>
-          <div>
-            <span>Сервіси</span>
-            <strong>{project.services.join(', ')}</strong>
-          </div>
-        </section>
+        <div className="video-frame">
+          <iframe
+            src={project.videoUrl}
+            title={project.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
 
-        <section className="video-section" aria-label="Відео проєкту">
-          <div className="video-container">
-            <iframe
-              src={project.videoUrl}
-              title={project.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </section>
-
-        <section className="gallery-section">
-          <div className="section-heading compact">
-            <p className="section-kicker">(Frames)</p>
-            <h2>Кадри з проєкту</h2>
-          </div>
-          <div className="image-gallery">
+        <section className="frames-section" aria-labelledby="frames-title">
+          <h2 id="frames-title">Frames</h2>
+          <div className="frames-grid">
             {project.images.map((image, index) => (
-              <img
-                key={image}
-                src={image}
-                alt={`${project.title}: кадр ${index + 1}`}
-                className="gallery-image"
-              />
+              <img key={image} src={image} alt={`${project.title} frame ${index + 1}`} />
             ))}
           </div>
         </section>
-      </div>
+      </article>
     </main>
   );
 }
