@@ -10,9 +10,9 @@ export function ProjectDetail() {
       <main className="simple-page">
         <div className="simple-page__inner">
           <p className="section-number">(404)</p>
-          <h1>Project not found</h1>
+          <h1>Проєкт не знайдено</h1>
           <Link href="/" className="text-link">
-            Back to projects
+            Назад до проєктів
           </Link>
         </div>
       </main>
@@ -23,7 +23,7 @@ export function ProjectDetail() {
     <main className="project-page">
       <article className="project-page__inner">
         <Link href="/" className="back-link">
-          ← Back to Projects
+          ← Назад до проєктів
         </Link>
 
         <header className="project-header">
@@ -33,11 +33,11 @@ export function ProjectDetail() {
             <p>{project.description}</p>
             <dl>
               <div>
-                <dt>Client</dt>
+                <dt>Клієнт</dt>
                 <dd>{project.client}</dd>
               </div>
               <div>
-                <dt>Role</dt>
+                <dt>Роль</dt>
                 <dd>{project.role}</dd>
               </div>
             </dl>
@@ -54,10 +54,10 @@ export function ProjectDetail() {
         </div>
 
         <section className="frames-section" aria-labelledby="frames-title">
-          <h2 id="frames-title">Frames</h2>
+          <h2 id="frames-title">Кадри</h2>
           <div className="frames-grid">
             {project.images.map((image, index) => (
-              <img key={image} src={image} alt={`${project.title} frame ${index + 1}`} />
+              <img key={image} src={image} alt={`${project.title}: кадр ${index + 1}`} />
             ))}
           </div>
         </section>

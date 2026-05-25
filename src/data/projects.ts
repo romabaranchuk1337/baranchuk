@@ -19,35 +19,35 @@ export const socialLinks = {
 
 export const focusAreas = [
   {
-    title: 'Automotive films',
+    title: 'Автомобільні відео',
     text: 'Рух, дорога, звук мотора, зимове світло й деталі автомобіля без зайвої реклами.',
   },
   {
-    title: 'Social cuts',
-    text: 'Короткі вертикальні відео, reels, backstage і швидкі монтажі для Instagram.',
+    title: 'Reels / social cuts',
+    text: 'Короткі вертикальні відео, backstage і швидкі монтажі для Instagram та інших соцмереж.',
   },
   {
-    title: 'Brand stories',
+    title: 'Бренд-історії',
     text: 'Відео для людей, малого бізнесу й команд, де важливі атмосфера та чесний кадр.',
   },
   {
-    title: 'Edit / color',
-    text: 'Монтаж, ритм, базова кольорокорекція і фінальні формати для різних платформ.',
+    title: 'Монтаж / колір',
+    text: 'Ритм, базова кольорокорекція і фінальні формати для різних платформ.',
   },
 ];
 
 export const projects: Project[] = [
   {
     id: 'porsche-911-winter-edition',
-    title: 'Porsche 911. Winter Edition',
+    title: 'Porsche 911. Зимова версія',
     description:
-      'Зимовий automotive film з YouTube-каналу Roman Baranchuk: чистий рух, холодне світло, дорога й увага до деталей автомобіля.',
+      'Реальний automotive film з YouTube-каналу Roman Baranchuk: чистий рух, холодне світло, дорога й увага до деталей автомобіля.',
     thumbnail: 'https://i.ytimg.com/vi/Hu1ydwTteVw/maxresdefault.jpg',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2026',
-    client: 'Personal / Automotive',
-    role: 'Camera / Edit / Color',
+    client: 'Власний проєкт / automotive',
+    role: 'Камера / монтаж / колір',
     images: [
       'https://i.ytimg.com/vi/Hu1ydwTteVw/maxresdefault.jpg',
       'https://i.ytimg.com/vi/Hu1ydwTteVw/sddefault.jpg',
@@ -57,16 +57,16 @@ export const projects: Project[] = [
   },
   {
     id: 'automotive-night-drive',
-    title: 'Automotive Night Drive',
+    title: 'Нічний automotive film',
     description:
-      'Placeholder project for a car film: night streets, reflections, headlights and a controlled cinematic pace.',
+      'Муляж проєкту для майбутнього автомобільного відео: нічне місто, відблиски, фари й спокійний кінематографічний темп.',
     thumbnail:
       'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2026',
-    client: 'Automotive / Placeholder',
-    role: 'Camera / Edit',
+    client: 'Automotive / муляж',
+    role: 'Камера / монтаж',
     images: [
       'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1400&q=88',
@@ -75,16 +75,16 @@ export const projects: Project[] = [
   },
   {
     id: 'reels-for-brand',
-    title: 'Reels for Brand',
+    title: 'Reels для бренду',
     description:
-      'Placeholder project for short social videos: fast rhythm, vertical-first thinking and clean product detail.',
+      'Муляж проєкту для коротких social-відео: швидкий ритм, вертикальні формати й чисті деталі продукту.',
     thumbnail:
       'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2026',
-    client: 'Social / Placeholder',
-    role: 'Shoot / Edit / Social formats',
+    client: 'Social / муляж',
+    role: 'Зйомка / монтаж / формати для соцмереж',
     images: [
       'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=1400&q=88',
@@ -93,16 +93,16 @@ export const projects: Project[] = [
   },
   {
     id: 'local-business-story',
-    title: 'Local Business Story',
+    title: 'Історія локального бізнесу',
     description:
-      'Placeholder project for a small business profile: people, process, location and natural atmosphere.',
+      'Муляж бренд-історії для малого бізнесу: люди, процес, простір і природна атмосфера.',
     thumbnail:
       'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Business / Placeholder',
-    role: 'Camera / Edit / Color',
+    client: 'Бізнес / муляж',
+    role: 'Камера / монтаж / колір',
     images: [
       'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=88',
@@ -111,16 +111,16 @@ export const projects: Project[] = [
   },
   {
     id: 'wedding-short-film',
-    title: 'Wedding Short Film',
+    title: 'Весільний short film',
     description:
-      'Placeholder project for an emotional event film: close details, quiet moments and a soft story arc.',
+      'Муляж емоційного event-відео: деталі, тихі моменти й м’яка історія дня.',
     thumbnail:
       'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Event / Placeholder',
-    role: 'Camera / Edit',
+    client: 'Подія / муляж',
+    role: 'Камера / монтаж',
     images: [
       'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1400&q=88',
@@ -129,16 +129,16 @@ export const projects: Project[] = [
   },
   {
     id: 'music-visual',
-    title: 'Music Visual',
+    title: 'Музичний visual',
     description:
-      'Placeholder project for an artist video: performance, mood, low-key light and edit on rhythm.',
+      'Муляж відео для артиста: перформанс, настрій, контрастне світло й монтаж у ритм.',
     thumbnail:
       'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Artist / Placeholder',
-    role: 'Director / DP / Edit',
+    client: 'Артист / муляж',
+    role: 'Режисура / камера / монтаж',
     images: [
       'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=88',
@@ -147,16 +147,16 @@ export const projects: Project[] = [
   },
   {
     id: 'product-detail-film',
-    title: 'Product Detail Film',
+    title: 'Product detail film',
     description:
-      'Placeholder project for product content: macro shots, controlled light and a premium minimal feel.',
+      'Муляж продуктового відео: макро, контрольоване світло й преміальний мінімалістичний настрій.',
     thumbnail:
       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Product / Placeholder',
-    role: 'Lighting / Camera / Edit',
+    client: 'Продукт / муляж',
+    role: 'Світло / камера / монтаж',
     images: [
       'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1400&q=88',
@@ -165,16 +165,16 @@ export const projects: Project[] = [
   },
   {
     id: 'travel-recap',
-    title: 'Travel Recap',
+    title: 'Travel recap',
     description:
-      'Placeholder project for a travel recap: road energy, wide frames, small moments and natural light.',
+      'Муляж travel-відео: дорога, широкі кадри, маленькі моменти й природне світло.',
     thumbnail:
       'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Travel / Placeholder',
-    role: 'Camera / Edit',
+    client: 'Подорож / муляж',
+    role: 'Камера / монтаж',
     images: [
       'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=88',
@@ -183,16 +183,16 @@ export const projects: Project[] = [
   },
   {
     id: 'event-aftermovie',
-    title: 'Event Aftermovie',
+    title: 'Event aftermovie',
     description:
-      'Placeholder project for an event recap: crowd, movement, details and fast social delivery.',
+      'Муляж aftermovie для події: люди, рух, деталі й швидка доставка для соцмереж.',
     thumbnail:
       'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=88',
     videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2024',
-    client: 'Event / Placeholder',
-    role: 'Camera / Edit / Social cutdowns',
+    client: 'Подія / муляж',
+    role: 'Камера / монтаж / social cutdowns',
     images: [
       'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=88',

@@ -1,8 +1,8 @@
 import { Link, useLocation } from 'wouter';
 
 const navItems = [
-  { href: '/', label: 'PROJECTS' },
-  { href: '/about', label: 'ABOUT' },
+  { href: '/', label: 'ПРОЄКТИ' },
+  { href: '/about', label: 'ПРО МЕНЕ' },
 ];
 
 export function Navigation() {
@@ -11,11 +11,11 @@ export function Navigation() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href="/" className="site-title" aria-label="Roman Baranchuk home">
+        <Link href="/" className="site-title" aria-label="Головна Baranchuk Production">
           Baranchuk Production
         </Link>
 
-        <nav className="site-nav" aria-label="Primary navigation">
+        <nav className="site-nav" aria-label="Головна навігація">
           {navItems.map((item) => (
             <Link
               key={item.href}

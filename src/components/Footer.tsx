@@ -16,7 +16,7 @@ export function Footer() {
           YouTube
         </a>
       </div>
-      <p>Copyright © {year} Roman Baranchuk. All Rights Reserved.</p>
+      <p>© {year} Roman Baranchuk. Всі права захищені.</p>
     </footer>
   );
 }

@@ -6,13 +6,13 @@ export function About() {
     <main className="about-page">
       <div className="about-page__inner">
         <Link href="/" className="back-link">
-          ← Back to Projects
+          ← Назад до проєктів
         </Link>
 
         <section className="about-layout">
           <div>
             <p className="section-number">(003)</p>
-            <h1>ABOUT.</h1>
+            <h1>ПРО МЕНЕ.</h1>
           </div>
 
           <div className="about-copy">
