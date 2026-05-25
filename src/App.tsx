@@ -5,9 +5,11 @@ import { Home } from './pages/Home';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { About } from './pages/About';
 
+const routerBase = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function App() {
   return (
-    <Router>
+    <Router base={routerBase}>
       <div className="flex flex-col min-h-screen">
         <Navigation />
         <div className="flex-grow">
