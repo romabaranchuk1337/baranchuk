@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import { socialLinks } from '../data/projects';
 
 export function About() {
   return (
@@ -10,27 +11,35 @@ export function About() {
 
         <section className="about-layout">
           <div>
-            <p className="section-number">(002)</p>
+            <p className="section-number">(003)</p>
             <h1>ABOUT.</h1>
           </div>
 
           <div className="about-copy">
             <p>
-              Roman Baranchuk is a videographer and filmmaker working with commercial videos,
-              music visuals, documentary stories and post-production.
+              Роман Баранчук — відеограф і монтажер, який працює під Baranchuk Production.
+              У фокусі — автомобільні відео, reels, бренд-історії, backstage і чистий
+              монтаж для соцмереж.
             </p>
             <p>
-              The work is built around clean composition, natural rhythm and a simple idea:
-              make every project feel direct, visual and easy to watch.
+              Його стиль хочеться тримати простим: без зайвого шуму, з увагою до руху,
+              світла, дороги, людей у кадрі й деталей, які роблять відео живим.
+            </p>
+            <p>
+              Сайт зберігає мінімалістичну структуру референса, але додає власний напрям
+              Роми: automotive-настрій, короткі social cuts і прямий контакт через його
+              публічні профілі.
             </p>
 
             <div className="contact-list">
-              <a href="mailto:contact@example.com">contact@example.com</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                Instagram
+              <a href={socialLinks.productionInstagram} target="_blank" rel="noopener noreferrer">
+                Instagram / Baranchuk Production
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                YouTube
+              <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
+                Instagram / Roma Baranchuk
+              </a>
+              <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
+                YouTube / Roman Baranchuk
               </a>
             </div>
           </div>

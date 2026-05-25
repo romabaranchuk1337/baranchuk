@@ -11,54 +11,133 @@ export interface Project {
   images: string[];
 }
 
+export const socialLinks = {
+  productionInstagram: 'https://www.instagram.com/baranchuk.production/',
+  personalInstagram: 'https://www.instagram.com/roma.baranchuk/',
+  youtube: 'https://www.youtube.com/channel/UCCxXpqAD2MnVBhMAueVENIA',
+};
+
+export const focusAreas = [
+  {
+    title: 'Automotive films',
+    text: 'Рух, дорога, звук мотора, зимове світло й деталі автомобіля без зайвої реклами.',
+  },
+  {
+    title: 'Social cuts',
+    text: 'Короткі вертикальні відео, reels, backstage і швидкі монтажі для Instagram.',
+  },
+  {
+    title: 'Brand stories',
+    text: 'Відео для людей, малого бізнесу й команд, де важливі атмосфера та чесний кадр.',
+  },
+  {
+    title: 'Edit / color',
+    text: 'Монтаж, ритм, базова кольорокорекція і фінальні формати для різних платформ.',
+  },
+];
+
 export const projects: Project[] = [
   {
-    id: 'fashion-film',
-    title: 'Fashion Film',
+    id: 'porsche-911-winter-edition',
+    title: 'Porsche 911. Winter Edition',
     description:
-      'A clean visual story built around movement, texture and a restrained editorial mood.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      'Зимовий automotive film з YouTube-каналу Roman Baranchuk: чистий рух, холодне світло, дорога й увага до деталей автомобіля.',
+    thumbnail: 'https://i.ytimg.com/vi/Hu1ydwTteVw/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2026',
-    client: 'Editorial',
-    role: 'Director / Camera / Edit',
-    images: [
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'porsche-inspired',
-    title: 'Automotive Campaign',
-    description:
-      'A sharp commercial piece focused on pace, reflection, detail and road energy.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2026',
-    client: 'Automotive',
+    client: 'Personal / Automotive',
     role: 'Camera / Edit / Color',
     images: [
-      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1400&q=88',
+      'https://i.ytimg.com/vi/Hu1ydwTteVw/maxresdefault.jpg',
+      'https://i.ytimg.com/vi/Hu1ydwTteVw/sddefault.jpg',
+      'https://i1.ytimg.com/vi/Hu1ydwTteVw/hqdefault.jpg',
+      'https://i.ytimg.com/vi/Hu1ydwTteVw/mqdefault.jpg',
     ],
   },
   {
-    id: 'music-session',
-    title: 'Live Session',
+    id: 'automotive-night-drive',
+    title: 'Automotive Night Drive',
     description:
-      'An intimate music video with low-key lighting, close detail and rhythm-led editing.',
+      'Placeholder project for a car film: night streets, reflections, headlights and a controlled cinematic pace.',
     thumbnail:
-      'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=88',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
+    videoType: 'youtube',
+    year: '2026',
+    client: 'Automotive / Placeholder',
+    role: 'Camera / Edit',
+    images: [
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=1400&q=88',
+    ],
+  },
+  {
+    id: 'reels-for-brand',
+    title: 'Reels for Brand',
+    description:
+      'Placeholder project for short social videos: fast rhythm, vertical-first thinking and clean product detail.',
+    thumbnail:
+      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1400&q=88',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
+    videoType: 'youtube',
+    year: '2026',
+    client: 'Social / Placeholder',
+    role: 'Shoot / Edit / Social formats',
+    images: [
+      'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=88',
+    ],
+  },
+  {
+    id: 'local-business-story',
+    title: 'Local Business Story',
+    description:
+      'Placeholder project for a small business profile: people, process, location and natural atmosphere.',
+    thumbnail:
+      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Artist',
+    client: 'Business / Placeholder',
+    role: 'Camera / Edit / Color',
+    images: [
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=88',
+    ],
+  },
+  {
+    id: 'wedding-short-film',
+    title: 'Wedding Short Film',
+    description:
+      'Placeholder project for an emotional event film: close details, quiet moments and a soft story arc.',
+    thumbnail:
+      'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=88',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
+    videoType: 'youtube',
+    year: '2025',
+    client: 'Event / Placeholder',
+    role: 'Camera / Edit',
+    images: [
+      'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=88',
+    ],
+  },
+  {
+    id: 'music-visual',
+    title: 'Music Visual',
+    description:
+      'Placeholder project for an artist video: performance, mood, low-key light and edit on rhythm.',
+    thumbnail:
+      'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1400&q=88',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
+    videoType: 'youtube',
+    year: '2025',
+    client: 'Artist / Placeholder',
     role: 'Director / DP / Edit',
     images: [
       'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1400&q=88',
@@ -67,33 +146,34 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'studio-product',
-    title: 'Studio Product',
+    id: 'product-detail-film',
+    title: 'Product Detail Film',
     description:
-      'A minimal product spot with clean compositions, macro details and controlled light.',
+      'Placeholder project for product content: macro shots, controlled light and a premium minimal feel.',
     thumbnail:
       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Product',
-    role: 'Camera / Lighting / Edit',
+    client: 'Product / Placeholder',
+    role: 'Lighting / Camera / Edit',
     images: [
       'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1400&q=88',
     ],
   },
   {
-    id: 'travel-story',
-    title: 'Travel Story',
+    id: 'travel-recap',
+    title: 'Travel Recap',
     description:
-      'A travel piece shaped around atmosphere, place, road movement and natural light.',
+      'Placeholder project for a travel recap: road energy, wide frames, small moments and natural light.',
     thumbnail:
       'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2025',
-    client: 'Travel',
+    client: 'Travel / Placeholder',
     role: 'Camera / Edit',
     images: [
       'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=88',
@@ -102,123 +182,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'documentary-portrait',
-    title: 'Documentary Portrait',
+    id: 'event-aftermovie',
+    title: 'Event Aftermovie',
     description:
-      'A short documentary portrait built from observation, interviews and honest texture.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2025',
-    client: 'Documentary',
-    role: 'Camera / Field Sound / Edit',
-    images: [
-      'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'restaurant-film',
-    title: 'Restaurant Film',
-    description:
-      'A warm commercial film focused on craft, detail, service and evening atmosphere.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2024',
-    client: 'Hospitality',
-    role: 'Director / Camera / Edit',
-    images: [
-      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'sports-profile',
-    title: 'Athlete Profile',
-    description:
-      'A compact brand film mixing training, portraiture and a grounded documentary tone.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2024',
-    client: 'Sport',
-    role: 'Camera / Edit / Sound',
-    images: [
-      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'event-recap',
-    title: 'Event Recap',
-    description:
-      'A fast recap edit built for social launch, with clean rhythm and wide coverage.',
+      'Placeholder project for an event recap: crowd, movement, details and fast social delivery.',
     thumbnail:
       'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/Hu1ydwTteVw',
     videoType: 'youtube',
     year: '2024',
-    client: 'Event',
-    role: 'Camera / Edit',
+    client: 'Event / Placeholder',
+    role: 'Camera / Edit / Social cutdowns',
     images: [
       'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=88',
       'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'architecture-film',
-    title: 'Architecture Film',
-    description:
-      'A quiet architectural visual study shaped by lines, texture, negative space and light.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2024',
-    client: 'Architecture',
-    role: 'Camera / Edit / Color',
-    images: [
-      'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'beauty-campaign',
-    title: 'Beauty Campaign',
-    description:
-      'A soft beauty campaign with close framing, polished skin tones and precise pacing.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2024',
-    client: 'Beauty',
-    role: 'Director / Lighting / Edit',
-    images: [
-      'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1400&q=88',
-    ],
-  },
-  {
-    id: 'urban-night',
-    title: 'Urban Night',
-    description:
-      'A night sequence with city reflections, handheld movement and a darker cinematic tone.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=88',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoType: 'youtube',
-    year: '2023',
-    client: 'Personal',
-    role: 'Camera / Edit / Color',
-    images: [
-      'https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1400&q=88',
-      'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=88',
+      'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1400&q=88',
     ],
   },
 ];

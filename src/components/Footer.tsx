@@ -1,16 +1,20 @@
+import { socialLinks } from '../data/projects';
+
 const year = new Date().getFullYear();
 
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer__socials" aria-label="Social links">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          Instagram
+        <a href={socialLinks.productionInstagram} target="_blank" rel="noopener noreferrer">
+          Baranchuk Production
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
+          Roma Baranchuk
+        </a>
+        <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
           YouTube
         </a>
-        <a href="mailto:contact@example.com">Contact Roman</a>
       </div>
       <p>Copyright © {year} Roman Baranchuk. All Rights Reserved.</p>
     </footer>

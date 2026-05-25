@@ -101,7 +101,18 @@ img {
 .portfolio-intro {
   width: min(var(--content), calc(100% - var(--page-x) * 2));
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+  gap: clamp(28px, 6vw, 96px);
+  align-items: end;
   padding: clamp(28px, 5vw, 78px) 0 clamp(26px, 4vw, 58px);
+}
+
+.portfolio-note {
+  margin-bottom: 8px;
+  color: #222;
+  font-size: clamp(17px, 1.7vw, 22px);
+  line-height: 1.42;
 }
 
 .section-number {
@@ -142,6 +153,10 @@ h1 {
   min-width: 0;
 }
 
+.portfolio-item.featured {
+  grid-column: span 2;
+}
+
 .portfolio-item__media {
   display: block;
   aspect-ratio: 16 / 9;
@@ -164,6 +179,72 @@ h1 {
 .portfolio-item__title {
   display: block;
   margin-top: 14px;
+}
+
+.focus-section,
+.social-strip {
+  width: min(var(--content), calc(100% - var(--page-x) * 2));
+  margin: 0 auto;
+}
+
+.focus-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1.38fr);
+  gap: clamp(34px, 7vw, 118px);
+  padding: 0 0 clamp(70px, 9vw, 132px);
+}
+
+.focus-section h2 {
+  margin: 0;
+  font-size: clamp(34px, 5.8vw, 82px);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+}
+
+.focus-item {
+  min-height: 180px;
+  padding: 24px 24px 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-item h3 {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.focus-item p {
+  max-width: 330px;
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.48;
+}
+
+.social-strip {
+  display: flex;
+  justify-content: center;
+  gap: clamp(18px, 3vw, 42px);
+  flex-wrap: wrap;
+  padding: 0 0 clamp(64px, 8vw, 112px);
+}
+
+.social-strip a {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.social-strip a:hover {
+  opacity: 0.55;
 }
 
 .project-page__inner,
@@ -316,6 +397,11 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .portfolio-intro,
+  .focus-section {
+    grid-template-columns: 1fr;
+  }
+
   .project-meta,
   .about-layout {
     grid-template-columns: 1fr;
@@ -340,8 +426,13 @@ h1 {
   }
 
   .portfolio-grid,
-  .frames-grid {
+  .frames-grid,
+  .focus-grid {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-item.featured {
+    grid-column: span 1;
   }
 
   .portfolio-intro {

@@ -12,7 +12,7 @@ export function Navigation() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-title" aria-label="Roman Baranchuk home">
-          Roman Baranchuk
+          Baranchuk Production
         </Link>
 
         <nav className="site-nav" aria-label="Primary navigation">
