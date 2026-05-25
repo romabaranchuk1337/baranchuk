@@ -1,45 +1,37 @@
 import { Link } from 'wouter';
+import { useI18n } from '../i18n';
 import { socialLinks } from '../data/projects';
 
 export function About() {
+  const { t } = useI18n();
+
   return (
     <main className="about-page">
       <div className="about-page__inner">
         <Link href="/" className="back-link">
-          ← Назад до проєктів
+          {t.project.back}
         </Link>
 
         <section className="about-layout">
           <div>
             <p className="section-number">(003)</p>
-            <h1>ПРО МЕНЕ.</h1>
+            <h1>{t.about.title}</h1>
           </div>
 
           <div className="about-copy">
-            <p>
-              Роман Баранчук — відеограф і монтажер, який працює під Baranchuk Production.
-              У фокусі — автомобільні відео, reels, бренд-історії, backstage і чистий
-              монтаж для соцмереж.
-            </p>
-            <p>
-              Його стиль хочеться тримати простим: без зайвого шуму, з увагою до руху,
-              світла, дороги, людей у кадрі й деталей, які роблять відео живим.
-            </p>
-            <p>
-              Сайт зберігає мінімалістичну структуру референса, але додає власний напрям
-              Роми: automotive-настрій, короткі social cuts і прямий контакт через його
-              публічні профілі.
-            </p>
+            {t.about.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
 
             <div className="contact-list">
               <a href={socialLinks.productionInstagram} target="_blank" rel="noopener noreferrer">
-                Instagram / Baranchuk Production
+                {t.about.instagramProduction}
               </a>
               <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
-                Instagram / Roma Baranchuk
+                {t.about.instagramPersonal}
               </a>
               <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
-                YouTube / Роман Баранчук
+                {t.about.youtube}
               </a>
             </div>
           </div>

@@ -55,6 +55,7 @@ img {
 
 .site-title,
 .site-nav__link,
+.language-switcher__button,
 .back-link,
 .text-link,
 .site-footer,
@@ -69,10 +70,47 @@ img {
   white-space: nowrap;
 }
 
+.site-actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3vw, 46px);
+}
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: clamp(18px, 3vw, 42px);
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #111;
+}
+
+.language-switcher__button {
+  min-width: 44px;
+  height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid #111;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+}
+
+.language-switcher__button:last-child {
+  border-right: 0;
+}
+
+.language-switcher__button.active {
+  background: #111;
+  color: #fff;
+  cursor: default;
+}
+
+.language-switcher__button:not(.active):hover {
+  background: #f3f3f3;
 }
 
 .site-nav__link {
@@ -424,6 +462,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+  }
+
+  .site-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .site-nav {
