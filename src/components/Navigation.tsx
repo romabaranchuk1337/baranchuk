@@ -2,7 +2,6 @@ import { Link, useLocation } from 'wouter';
 
 const navItems = [
   { href: '/', label: 'ПРОЄКТИ', match: '/' },
-  { href: '/portfolio', label: 'ПОРТФОЛІО', match: '/portfolio' },
   { href: '/about', label: 'ПРО МЕНЕ', match: '/about' },
 ];
 
