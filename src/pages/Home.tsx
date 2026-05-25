@@ -6,7 +6,11 @@ export function Home() {
     <main className="portfolio-page">
       <section className="portfolio-intro" aria-labelledby="projects-title">
         <p className="section-number">(001)</p>
-        <h1 id="projects-title">* ПРОЄКТИ.</h1>
+        <h1 id="projects-title" className="stacked-title">
+          <span>*</span>
+          <span>ПРОЄКТИ</span>
+          <span>.</span>
+        </h1>
       </section>
 
       <section id="portfolio" className="portfolio-grid" aria-label="Вибрані проєкти">
