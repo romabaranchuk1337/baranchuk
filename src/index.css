@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -8,8 +9,8 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --page-x: clamp(20px, 4.2vw, 72px);
-  --content: 1440px;
+  --page-x: clamp(16px, 1.4vw, 48px);
+  --content: 1680px;
   --muted: #777;
   --line: #e7e7e7;
 }
@@ -67,9 +68,14 @@ img {
 }
 
 .site-title {
+  display: inline-block;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 30px;
+  font-weight: 900;
   line-height: 1.15;
   white-space: nowrap;
+  transform: scaleX(0.88);
+  transform-origin: left center;
 }
 
 .site-actions {
@@ -184,8 +190,8 @@ h1 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: clamp(18px, 2.2vw, 34px);
-  row-gap: clamp(38px, 5vw, 72px);
+  column-gap: clamp(16px, 1.35vw, 26px);
+  row-gap: clamp(34px, 4vw, 62px);
   padding-bottom: clamp(78px, 10vw, 150px);
 }
 
@@ -215,10 +221,11 @@ h1 {
 
 .portfolio-item__title {
   display: block;
-  margin-top: 12px;
-  font-size: clamp(18px, 1.55vw, 22px);
-  font-weight: 700;
-  line-height: 1.2;
+  margin-top: 10px;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(20px, 1.35vw, 26px);
+  font-weight: 900;
+  line-height: 1.08;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -309,6 +316,8 @@ h1 {
 }
 
 .project-header h1 {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
   max-width: 940px;
   margin-bottom: 30px;
 }
