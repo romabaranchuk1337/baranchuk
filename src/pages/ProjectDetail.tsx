@@ -26,39 +26,37 @@ export function ProjectDetail() {
   return (
     <main className="project-page">
       <article className="project-page__inner">
-        <Link href="/" className="back-link">
-          {t.project.back}
-        </Link>
-
-        <header className="project-header">
-          <p className="section-number">({project.year})</p>
-          <h1>{copy.title}</h1>
-          <div className="project-meta">
-            <p>{copy.description}</p>
-            <dl>
-              <div>
-                <dt>{t.project.client}</dt>
-                <dd>{copy.client}</dd>
-              </div>
+        <section className="project-hero" aria-labelledby="project-title">
+          <div className="project-copy-block">
+            <h1 id="project-title">{copy.title}</h1>
+            <p className="project-subtitle">{copy.client}</p>
+            <p className="project-description">{copy.description}</p>
+            <dl className="project-details">
               <div>
                 <dt>{t.project.role}</dt>
                 <dd>{copy.role}</dd>
               </div>
+              <div>
+                <dt>{t.project.year}</dt>
+                <dd>{project.year}</dd>
+              </div>
             </dl>
           </div>
-        </header>
 
-        <div className="video-frame">
-          <iframe
-            src={project.videoUrl}
-            title={copy.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+          <div className="video-frame">
+            <iframe
+              src={project.videoUrl}
+              title={copy.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
 
         <section className="frames-section" aria-labelledby="frames-title">
-          <h2 id="frames-title">{t.project.frames}</h2>
+          <h2 id="frames-title" className="sr-only">
+            {t.project.frames}
+          </h2>
           <div className="frames-grid">
             {project.images.map((image, index) => (
               <img key={image} src={image} alt={t.project.frameAlt(copy.title, index + 1)} />

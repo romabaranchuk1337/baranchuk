@@ -22,6 +22,7 @@ type TranslationDictionary = {
     back: string;
     client: string;
     role: string;
+    year: string;
     frames: string;
     frameAlt: (title: string, index: number) => string;
   };
@@ -68,6 +69,7 @@ const translations: Record<Language, TranslationDictionary> = {
       back: '← Назад до проєктів',
       client: 'Клієнт',
       role: 'Роль',
+      year: 'Рік',
       frames: 'Кадри',
       frameAlt: (title, index) => `${title}: кадр ${index}`,
     },
@@ -107,6 +109,7 @@ const translations: Record<Language, TranslationDictionary> = {
       back: '← Back to projects',
       client: 'Client',
       role: 'Role',
+      year: 'Year',
       frames: 'Frames',
       frameAlt: (title, index) => `${title}: frame ${index}`,
     },
