@@ -67,6 +67,8 @@ img {
 }
 
 .site-title {
+  font-size: 30px;
+  line-height: 1.15;
   white-space: nowrap;
 }
 

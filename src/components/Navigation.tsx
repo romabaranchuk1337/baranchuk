@@ -19,7 +19,7 @@ export function Navigation() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-title" aria-label={t.nav.homeAria}>
-          Baranchuk Production
+          BARANCHUK ROMAN
         </Link>
 
         <div className="site-actions">
