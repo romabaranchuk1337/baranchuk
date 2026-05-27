@@ -24,9 +24,6 @@ export function About() {
             ))}
 
             <div className="contact-list">
-              <a href={socialLinks.productionInstagram} target="_blank" rel="noopener noreferrer">
-                {t.about.instagramProduction}
-              </a>
               <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
                 {t.about.instagramPersonal}
               </a>

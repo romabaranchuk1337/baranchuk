@@ -1,6 +1,6 @@
 import { Link } from 'wouter';
 import { useI18n } from '../i18n';
-import { focusAreas, projects, socialLinks } from '../data/projects';
+import { projects } from '../data/projects';
 
 export function Home() {
   const { language, t } = useI18n();
@@ -29,33 +29,6 @@ export function Home() {
             </Link>
           );
         })}
-      </section>
-
-      <section className="focus-section" aria-labelledby="focus-title">
-        <div>
-          <p className="section-number">(002)</p>
-          <h2 id="focus-title">{t.home.focusTitle}</h2>
-        </div>
-        <div className="focus-grid">
-          {focusAreas[language].map((item) => (
-            <article key={item.title} className="focus-item">
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="social-strip" aria-label={t.home.socialAria}>
-        <a href={socialLinks.productionInstagram} target="_blank" rel="noopener noreferrer">
-          @baranchuk.production
-        </a>
-        <a href={socialLinks.personalInstagram} target="_blank" rel="noopener noreferrer">
-          @roma.baranchuk
-        </a>
-        <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
-          {t.home.youtubeLabel}
-        </a>
       </section>
     </main>
   );
