@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "e-Ukraine";
+  src: url("./assets/fonts/e-Ukraine-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanson";
+  src: url("./assets/fonts/Hanson-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -69,12 +85,13 @@ img {
 
 .site-title {
   display: inline-block;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 900;
+  font-family: "Hanson", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 1.15;
+  letter-spacing: -0.05em;
   white-space: nowrap;
-  transform: scaleX(0.88);
+  transform: scaleX(0.9);
   transform-origin: left center;
 }
 
@@ -178,6 +195,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.portfolio-intro h1 {
+  margin-left: clamp(44px, 12vw, 220px);
+  font-family: "e-Ukraine", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
 .stacked-title {
   display: grid;
   justify-items: start;
@@ -222,11 +246,11 @@ h1 {
 .portfolio-item__title {
   display: block;
   margin-top: 10px;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(20px, 1.35vw, 26px);
-  font-weight: 900;
+  font-family: "e-Ukraine", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(16px, 0.95vw, 18px);
+  font-weight: 700;
   line-height: 1.08;
-  letter-spacing: 0;
+  letter-spacing: -0.025em;
   text-transform: uppercase;
 }
 
@@ -316,8 +340,9 @@ h1 {
 }
 
 .project-header h1 {
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 900;
+  font-family: "e-Ukraine", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.05em;
   max-width: 940px;
   margin-bottom: 30px;
 }
